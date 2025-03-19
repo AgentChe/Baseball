@@ -6,17 +6,20 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		86EBD62E2D8B123200FEB763 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86EBD6282D8B123200FEB763 /* Preview Assets.xcassets */; };
+		86EBD62F2D8B123200FEB763 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86EBD62A2D8B123200FEB763 /* Assets.xcassets */; };
+		86EBD6302D8B123200FEB763 /* BaseballApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86EBD62B2D8B123200FEB763 /* BaseballApp.swift */; };
+		86EBD6312D8B123200FEB763 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86EBD62C2D8B123200FEB763 /* ContentView.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		86EBD6172D8B121A00FEB763 /* Baseball.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Baseball.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		86EBD6282D8B123200FEB763 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		86EBD62A2D8B123200FEB763 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		86EBD62B2D8B123200FEB763 /* BaseballApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseballApp.swift; sourceTree = "<group>"; };
+		86EBD62C2D8B123200FEB763 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		86EBD6192D8B121A00FEB763 /* Baseball */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = Baseball;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		86EBD6142D8B121A00FEB763 /* Frameworks */ = {
@@ -32,7 +35,7 @@
 		86EBD60E2D8B121A00FEB763 = {
 			isa = PBXGroup;
 			children = (
-				86EBD6192D8B121A00FEB763 /* Baseball */,
+				86EBD62D2D8B123200FEB763 /* Baseball */,
 				86EBD6182D8B121A00FEB763 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +46,25 @@
 				86EBD6172D8B121A00FEB763 /* Baseball.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		86EBD6292D8B123200FEB763 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				86EBD6282D8B123200FEB763 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		86EBD62D2D8B123200FEB763 /* Baseball */ = {
+			isa = PBXGroup;
+			children = (
+				86EBD6292D8B123200FEB763 /* Preview Content */,
+				86EBD62A2D8B123200FEB763 /* Assets.xcassets */,
+				86EBD62B2D8B123200FEB763 /* BaseballApp.swift */,
+				86EBD62C2D8B123200FEB763 /* ContentView.swift */,
+			);
+			path = Baseball;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -59,9 +81,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				86EBD6192D8B121A00FEB763 /* Baseball */,
 			);
 			name = Baseball;
 			packageProductDependencies = (
@@ -109,6 +128,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86EBD62E2D8B123200FEB763 /* Preview Assets.xcassets in Resources */,
+				86EBD62F2D8B123200FEB763 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +140,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86EBD6302D8B123200FEB763 /* BaseballApp.swift in Sources */,
+				86EBD6312D8B123200FEB763 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
