@@ -92,7 +92,6 @@
 		86EBD7492D8B134800FEB763 /* CollectionTotalHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86EBD6842D8B134800FEB763 /* CollectionTotalHeader.swift */; };
 		86EBD74A2D8B134800FEB763 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86EBD64C2D8B134800FEB763 /* Fonts.swift */; };
 		86EBD74B2D8B134800FEB763 /* HomeCardScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86EBD69B2D8B134800FEB763 /* HomeCardScannerView.swift */; };
-		86EBD74C2D8B134800FEB763 /* FacebookManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86EBD6352D8B134800FEB763 /* FacebookManager.swift */; };
 		86EBD74D2D8B134800FEB763 /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86EBD6DC2D8B134800FEB763 /* HomeModel.swift */; };
 		86EBD74E2D8B134800FEB763 /* ProfileCollectionRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86EBD6E62D8B134800FEB763 /* ProfileCollectionRequest.swift */; };
 		86EBD74F2D8B134800FEB763 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86EBD6A12D8B134800FEB763 /* HomeView.swift */; };
@@ -109,7 +108,6 @@
 		86EBD75A2D8B134800FEB763 /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86EBD6B92D8B134800FEB763 /* OnboardingViewModel.swift */; };
 		86EBD75B2D8B134800FEB763 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86EBD6C32D8B134800FEB763 /* RootView.swift */; };
 		86EBD75C2D8B134800FEB763 /* SalesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86EBD65D2D8B134800FEB763 /* SalesView.swift */; };
-		86EBD75D2D8B134800FEB763 /* FirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86EBD6362D8B134800FEB763 /* FirebaseManager.swift */; };
 		86EBD75E2D8B134800FEB763 /* PageTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86EBD63C2D8B134800FEB763 /* PageTabBar.swift */; };
 		86EBD75F2D8B134800FEB763 /* PaygateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86EBD6C12D8B134800FEB763 /* PaygateViewModel.swift */; };
 		86EBD7602D8B134800FEB763 /* FiltersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86EBD6912D8B134800FEB763 /* FiltersViewModel.swift */; };
@@ -169,8 +167,6 @@
 		86EBD62C2D8B123200FEB763 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		86EBD6322D8B133800FEB763 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		86EBD6342D8B134800FEB763 /* AmplitudeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmplitudeManager.swift; sourceTree = "<group>"; };
-		86EBD6352D8B134800FEB763 /* FacebookManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookManager.swift; sourceTree = "<group>"; };
-		86EBD6362D8B134800FEB763 /* FirebaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseManager.swift; sourceTree = "<group>"; };
 		86EBD6382D8B134800FEB763 /* AlertPresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertPresentation.swift; sourceTree = "<group>"; };
 		86EBD6392D8B134800FEB763 /* Button+Styles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Button+Styles.swift"; sourceTree = "<group>"; };
 		86EBD63A2D8B134800FEB763 /* GradientBackgorund.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientBackgorund.swift; sourceTree = "<group>"; };
@@ -392,8 +388,6 @@
 			isa = PBXGroup;
 			children = (
 				86EBD6342D8B134800FEB763 /* AmplitudeManager.swift */,
-				86EBD6352D8B134800FEB763 /* FacebookManager.swift */,
-				86EBD6362D8B134800FEB763 /* FirebaseManager.swift */,
 			);
 			path = Analytics;
 			sourceTree = "<group>";
@@ -1237,7 +1231,6 @@
 				86EBD7492D8B134800FEB763 /* CollectionTotalHeader.swift in Sources */,
 				86EBD74A2D8B134800FEB763 /* Fonts.swift in Sources */,
 				86EBD74B2D8B134800FEB763 /* HomeCardScannerView.swift in Sources */,
-				86EBD74C2D8B134800FEB763 /* FacebookManager.swift in Sources */,
 				86EBD74D2D8B134800FEB763 /* HomeModel.swift in Sources */,
 				86EBD74E2D8B134800FEB763 /* ProfileCollectionRequest.swift in Sources */,
 				86EBD74F2D8B134800FEB763 /* HomeView.swift in Sources */,
@@ -1254,7 +1247,6 @@
 				86EBD75A2D8B134800FEB763 /* OnboardingViewModel.swift in Sources */,
 				86EBD75B2D8B134800FEB763 /* RootView.swift in Sources */,
 				86EBD75C2D8B134800FEB763 /* SalesView.swift in Sources */,
-				86EBD75D2D8B134800FEB763 /* FirebaseManager.swift in Sources */,
 				86EBD75E2D8B134800FEB763 /* PageTabBar.swift in Sources */,
 				86EBD75F2D8B134800FEB763 /* PaygateViewModel.swift in Sources */,
 				86EBD7602D8B134800FEB763 /* FiltersViewModel.swift in Sources */,
@@ -1460,7 +1452,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Baseball.Baseball;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1500,7 +1492,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Baseball.Baseball;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
