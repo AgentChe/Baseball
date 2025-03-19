@@ -41,7 +41,8 @@ struct SalesView: View {
             if let report = sale.report {
                 PriceChartView(
                     title: "CardDetails.Report".localized,
-                    model: report
+                    model: report,
+                    type: .details
                 )
             }
         }
@@ -53,7 +54,7 @@ struct SalesView: View {
             Spacer()
             Text(value)
         }
-        .padding(.vertical, 10.scale)
+        .padding(.vertical, 16.scale)
         .padding(.horizontal, 18.scale)
         .background(.main300, in: RoundedRectangle(cornerRadius: 8.scale))
     }

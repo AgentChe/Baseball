@@ -85,11 +85,11 @@ struct GradeView: View {
             Image(isSelected ? "Checkbox.Selected" : "Checkbox.Default")
         }
         .padding(16.scale)
-        .background(isSelected ? .main400 : .clear)
+        .background(isSelected ? .main300 : .clear)
         .clipShape(RoundedRectangle(cornerRadius: 12.scale))
         .overlay {
             RoundedRectangle(cornerRadius: 12.scale)
-                .stroke(.main400, lineWidth: 1.scale)
+                .stroke(.main300, lineWidth: 1.scale)
         }
     }
 }

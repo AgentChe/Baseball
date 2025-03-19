@@ -27,7 +27,6 @@ struct CardCollectionView: View {
             }
         }
         .screenState($viewModel.screenState, bottomOffset: 32.scale, tryAgain: viewModel.makeData)
-        .gradientBackground()
     }
 }
 

@@ -89,10 +89,12 @@ private struct ScannerButtonStyle: ButtonStyle {
         configuration.label
             .padding(.vertical, 30.scale)
             .frame(maxWidth: .infinity)
-            .background(configuration.isPressed ? .main400 : .main400.opacity(0.02), in: RoundedRectangle(cornerRadius: 8.scale))
+            .background(.main300, in: RoundedRectangle(cornerRadius: 8.scale))
             .overlay {
-                RoundedRectangle(cornerRadius: 8.scale)
-                    .stroke(.main400, lineWidth: 1.scale)
+                if configuration.isPressed {
+                    RoundedRectangle(cornerRadius: 8.scale)
+                        .stroke(.mono100, lineWidth: 1.scale)
+                }
             }
     }
 }

@@ -11,14 +11,34 @@ struct GradientBackgorund: ViewModifier {
     func body(content: Content) -> some View {
         content
             .background(
-                LinearGradient(
-                    colors: [.gradientBackground, .gradientBackground.opacity(0)],
-                    startPoint: .topLeading,
-                    endPoint: .bottomTrailing
-                )
-                .opacity(0.3)
-                .background(.gradientSubstrate)
-                .ignoresSafeArea()
+                Color.black
+                    .overlay(alignment: .topTrailing, content: {
+                        Circle()
+                            .fill(Appearance.main500)
+                            .opacity(0.5)
+                            .frame(width: 407.scale, height: 407.scale)
+                            .alignmentGuide(.top, computeValue: {  dimension in
+                                dimension[.top] + 43.scale
+                            })
+                            .alignmentGuide(.trailing, computeValue: { dimension in
+                                dimension[.trailing] - 149.scale
+                            })
+                            .blur(radius: 150)
+                    })
+                    .overlay(alignment: .topLeading, content: {
+                        Circle()
+                            .fill(Appearance.main100)
+                            .opacity(0.56)
+                            .frame(width: 407.scale, height: 407.scale)
+                            .alignmentGuide(.top, computeValue: {  dimension in
+                                dimension[.top] + 43.scale
+                            })
+                            .alignmentGuide(.leading, computeValue: { dimension in
+                                dimension[.leading] + 147.scale
+                            })
+                            .blur(radius: 180)
+                    })
+                    .ignoresSafeArea()
             )
     }
 }
@@ -28,3 +48,11 @@ extension View {
         modifier(GradientBackgorund())
     }
 }
+
+#Preview(body: {
+    VStack {
+        Spacer()
+    }
+    .frame(maxWidth: .infinity)
+    .gradientBackground()
+})

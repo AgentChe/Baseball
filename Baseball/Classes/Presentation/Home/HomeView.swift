@@ -46,7 +46,7 @@ private extension HomeView {
                             .padding(.leading, 16.scale)
                             .padding(.top, 24.scale)
                     case let .priceReport(report):
-                        PriceChartView(title: "Chart.Title.Collection".localized,  model: report)
+                        PriceChartView(title: "Chart.Title.Collection".localized,  model: report, type: .home)
                             .padding(.horizontal, 16.scale)
                     case let .other(model):
                         NavigationLink(value: Route.cardDescription(id: model.cardId, grade: model.grade, collection: .wishList)) {

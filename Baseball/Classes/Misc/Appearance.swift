@@ -16,4 +16,5 @@ enum Appearance {
     static let mono100 = Color("mono100")
     static let gradientBackground = Color("GradientBackground")
     static let gradientSubstrate = Color("GradientSubstrate")
+    static let pageIndicator = Color("PageIndicator")
 }

@@ -15,7 +15,7 @@ struct OnboardingPageIndicatorView: View {
         HStack(spacing: 6.scale) {
             ForEach(pages) { page in
                 Capsule()
-                    .fill(current == page ? Appearance.main100 : Appearance.main300)
+                    .fill(current == page ? Appearance.main100 : .pageIndicator)
             }
         }
         .frame(height: 8.scale)

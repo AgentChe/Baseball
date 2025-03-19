@@ -11,9 +11,11 @@ import Charts
 struct PriceChartView: View {
     @StateObject private var viewModel: PriceChartViewModel
     private let title: String
+    private var type: ChartType
     
-    init(title: String, model: PriceReport) {
+    init(title: String, model: PriceReport, type: ChartType) {
         self.title = title
+        self.type = type
         _viewModel = StateObject(wrappedValue: .init(model: model))
     }
     
@@ -32,7 +34,7 @@ struct PriceChartView: View {
                         .interpolationMethod(.catmullRom)
                         .foregroundStyle(
                             LinearGradient(
-                                colors: [.main500.opacity(0.4), .main300.opacity(1)],
+                                colors: [.main100.opacity(0.4), .main300.opacity(1)],
                                 startPoint: .top,
                                 endPoint: .bottom
                             )
@@ -40,7 +42,7 @@ struct PriceChartView: View {
                     
                     LineMark(x: .value("Date", price.dateTime), y: .value("Price", price.priceRaw))
                         .interpolationMethod(.catmullRom)
-                        .foregroundStyle(.main500)
+                        .foregroundStyle(.main100)
                         .lineStyle(StrokeStyle(lineWidth: 2.scale))
                 }
             }
@@ -53,17 +55,17 @@ struct PriceChartView: View {
             .frame(height: 108.scale, alignment: .bottom)
             .background {
                 Rectangle()
-                    .fill(.main500)
+                    .fill(.main100)
                     .frame(width: 1.scale)
             }
             .chartOverlay(alignment: .top) { proxy in
                 VStack(spacing: 0) {
                     toolTypeText
                         .font(Fonts.Inter.font(size: 12.scale, weight: .w700))
-                        .foregroundStyle(.white)
+                        .foregroundStyle(type.tooltipTextColor)
                         .padding(.horizontal, 16.scale)
                         .padding(.vertical, 8.scale)
-                        .background(.main400, in: Capsule())
+                        .background(type.tooltipColor, in: Capsule())
                     
                     Triangle()
                         .fill(.main400)
@@ -84,7 +86,7 @@ struct PriceChartView: View {
                         }
                     )
                     .background(
-                        viewModel.currentFilter == filter ? .main100 : .main200,
+                        viewModel.currentFilter == filter ? .main100 : type.filterColor,
                         in: Capsule()
                     )
                     .overlay {
@@ -100,7 +102,7 @@ struct PriceChartView: View {
         .background(.main300, in: RoundedRectangle(cornerRadius: 16.scale))
         .overlay {
             RoundedRectangle(cornerRadius: 16.scale)
-                .stroke(.main200, lineWidth: 1.scale)
+                .stroke(.main400, lineWidth: 1.scale)
         }
     }
     
@@ -126,6 +128,36 @@ struct PriceChartView: View {
     }
 }
 
+extension PriceChartView {
+    enum ChartType {
+        case home
+        case details
+    }
+}
+
+private extension PriceChartView.ChartType {
+    var tooltipColor: Color {
+        switch self {
+        case .home: .mono100
+        case .details: .main400
+        }
+    }
+    
+    var filterColor: Color {
+        switch self {
+        case .home: .white.opacity(0.2)
+        case .details: .main400
+        }
+    }
+    
+    var tooltipTextColor: Color {
+        switch self {
+        case .home: .mono200
+        case .details: .mono100
+        }
+    }
+}
+
 private struct Triangle: Shape {
     func path(in rect: CGRect) -> Path {
         Path { path in
@@ -139,7 +171,7 @@ private struct Triangle: Shape {
 
 #Preview {
     VStack {
-        PriceChartView(title: "Chart.Title.Collection".localized, model: .init(today: [], week: [], twoWeek: [], month: []))
+        PriceChartView(title: "Chart.Title.Collection".localized, model: .init(today: [], week: [], twoWeek: [], month: []), type: .details)
             .frame(maxWidth: .infinity)
     }
     .padding(.horizontal, 16.scale)

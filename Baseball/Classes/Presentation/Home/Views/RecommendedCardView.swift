@@ -41,7 +41,7 @@ struct RecommendedCardView: View {
                         .foregroundStyle(.mono100)
                         .padding(.horizontal, 16.5.scale)
                         .padding(.vertical, 8.scale)
-                        .background(.main200, in: Capsule())
+                        .background(.white.opacity(0.2), in: Capsule())
                         .padding(.trailing, 6.scale)
                 }
                 

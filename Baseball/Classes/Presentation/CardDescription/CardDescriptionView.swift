@@ -117,7 +117,7 @@ private extension CardDescriptionView {
                         .font(Fonts.Inter.font(size: 14.scale, weight: .w400))
                         .foregroundStyle(.mono100)
                         .padding(EdgeInsets(top: 8.scale, leading: 16.5.scale, bottom: 8.scale, trailing: 16.5.scale))
-                        .background(.main200, in: Capsule())
+                        .background(.white.opacity(0.2), in: Capsule())
                 }
                     .padding(.horizontal, 16.scale)
                 

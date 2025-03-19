@@ -15,8 +15,8 @@
 "Delete" = "Delete";
 
 // MARK: Splash
-"Splash.Title" = "Welcome to Football Card Collector ";
-"Splash.Subtitle" = "Discover, scan, and collect your favorite football cards all in one place.";
+"Splash.Title" = "Welcome to Baseball Card Collector";
+"Splash.Subtitle" = "Discover, scan, and collect your favorite baseball cards all in one place.";
 
 // MARK: Onboarding
 "Onboarding.Title1" = "Personalize Your Experience";
@@ -58,7 +58,7 @@
 "Home.Scanner.Subtitle" = "Add your first card to the collection";
 "Home.Scanner.OpenScanner" = "Open scanner";
 "Home.Section.Recommended" = "Recommended cards for you";
-"Home.Section.Other" = "Other categories";
+"Home.Section.Other" = "Other cards";
 "Home.Approximate" = "Approximate estimate";
 
 // MARK: Chart
