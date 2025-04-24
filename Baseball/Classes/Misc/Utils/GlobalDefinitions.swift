@@ -20,6 +20,7 @@ enum GlobalDefinitions {
     
     static let applicationTag = "BASEBALL_CARDS"
     static let amplitudeApiKey = "17fa94a421fa4349d8b1db59c8e06fbe"
+    static let appCategory = "baseball"
     
     enum Paygate {
         static let yearly = "sj.baseboll.yearly"

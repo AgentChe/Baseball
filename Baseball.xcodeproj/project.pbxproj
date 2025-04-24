@@ -8,6 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		7004929516EF11AC70669C71 /* Pods_Baseball.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4A1876050CB2DFB0DB263CB /* Pods_Baseball.framework */; };
+		86CFAC892DBAA16700FFC7D3 /* FastFilterType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CFAC812DBAA16700FFC7D3 /* FastFilterType.swift */; };
+		86CFAC8A2DBAA16700FFC7D3 /* FastFiltersSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CFAC862DBAA16700FFC7D3 /* FastFiltersSheet.swift */; };
+		86CFAC8B2DBAA16700FFC7D3 /* FastFiltersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CFAC832DBAA16700FFC7D3 /* FastFiltersView.swift */; };
+		86CFAC8C2DBAA16700FFC7D3 /* GradingHelpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CFAC7F2DBAA16700FFC7D3 /* GradingHelpViewModel.swift */; };
+		86CFAC8D2DBAA16700FFC7D3 /* GradingHelpItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CFAC7C2DBAA16700FFC7D3 /* GradingHelpItem.swift */; };
+		86CFAC8E2DBAA16700FFC7D3 /* FastFiltersSheetViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CFAC872DBAA16700FFC7D3 /* FastFiltersSheetViewModel.swift */; };
+		86CFAC8F2DBAA16700FFC7D3 /* GradingHelpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CFAC7E2DBAA16700FFC7D3 /* GradingHelpView.swift */; };
+		86CFAC902DBAA16700FFC7D3 /* GradingHelpType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CFAC7B2DBAA16700FFC7D3 /* GradingHelpType.swift */; };
 		86EBD62E2D8B123200FEB763 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86EBD6282D8B123200FEB763 /* Preview Assets.xcassets */; };
 		86EBD62F2D8B123200FEB763 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86EBD62A2D8B123200FEB763 /* Assets.xcassets */; };
 		86EBD6302D8B123200FEB763 /* BaseballApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86EBD62B2D8B123200FEB763 /* BaseballApp.swift */; };
@@ -50,7 +58,7 @@
 		86EBD71F2D8B134800FEB763 /* SearchField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86EBD63F2D8B134800FEB763 /* SearchField.swift */; };
 		86EBD7202D8B134800FEB763 /* ProfileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86EBD6EC2D8B134800FEB763 /* ProfileManager.swift */; };
 		86EBD7212D8B134800FEB763 /* ProfileAttributesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86EBD6E42D8B134800FEB763 /* ProfileAttributesRequest.swift */; };
-		86EBD7222D8B134800FEB763 /* Grade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86EBD6CF2D8B134800FEB763 /* Grade.swift */; };
+		86EBD7222D8B134800FEB763 /* GradeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86EBD6CF2D8B134800FEB763 /* GradeService.swift */; };
 		86EBD7232D8B134800FEB763 /* CardCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86EBD6CB2D8B134800FEB763 /* CardCategory.swift */; };
 		86EBD7242D8B134800FEB763 /* CardScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86EBD66D2D8B134800FEB763 /* CardScannerView.swift */; };
 		86EBD7252D8B134800FEB763 /* DetailsFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86EBD6592D8B134800FEB763 /* DetailsFooterView.swift */; };
@@ -160,6 +168,14 @@
 
 /* Begin PBXFileReference section */
 		5FBBF3DAD9AF3EA6C10513FE /* Pods-Baseball.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Baseball.debug.xcconfig"; path = "Target Support Files/Pods-Baseball/Pods-Baseball.debug.xcconfig"; sourceTree = "<group>"; };
+		86CFAC7B2DBAA16700FFC7D3 /* GradingHelpType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradingHelpType.swift; sourceTree = "<group>"; };
+		86CFAC7C2DBAA16700FFC7D3 /* GradingHelpItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradingHelpItem.swift; sourceTree = "<group>"; };
+		86CFAC7E2DBAA16700FFC7D3 /* GradingHelpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradingHelpView.swift; sourceTree = "<group>"; };
+		86CFAC7F2DBAA16700FFC7D3 /* GradingHelpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradingHelpViewModel.swift; sourceTree = "<group>"; };
+		86CFAC812DBAA16700FFC7D3 /* FastFilterType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastFilterType.swift; sourceTree = "<group>"; };
+		86CFAC832DBAA16700FFC7D3 /* FastFiltersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastFiltersView.swift; sourceTree = "<group>"; };
+		86CFAC862DBAA16700FFC7D3 /* FastFiltersSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastFiltersSheet.swift; sourceTree = "<group>"; };
+		86CFAC872DBAA16700FFC7D3 /* FastFiltersSheetViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastFiltersSheetViewModel.swift; sourceTree = "<group>"; };
 		86EBD6172D8B121A00FEB763 /* Baseball.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Baseball.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86EBD6282D8B123200FEB763 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		86EBD62A2D8B123200FEB763 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -271,7 +287,7 @@
 		86EBD6CC2D8B134800FEB763 /* CardDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetails.swift; sourceTree = "<group>"; };
 		86EBD6CD2D8B134800FEB763 /* CardDiscoverResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDiscoverResponse.swift; sourceTree = "<group>"; };
 		86EBD6CE2D8B134800FEB763 /* CardUploadResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardUploadResponse.swift; sourceTree = "<group>"; };
-		86EBD6CF2D8B134800FEB763 /* Grade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Grade.swift; sourceTree = "<group>"; };
+		86EBD6CF2D8B134800FEB763 /* GradeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradeService.swift; sourceTree = "<group>"; };
 		86EBD6D12D8B134800FEB763 /* CardDetailsRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetailsRequest.swift; sourceTree = "<group>"; };
 		86EBD6D22D8B134800FEB763 /* CategoriesRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesRequest.swift; sourceTree = "<group>"; };
 		86EBD6D32D8B134800FEB763 /* DiscoverRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverRequest.swift; sourceTree = "<group>"; };
@@ -341,6 +357,60 @@
 				F34B1FD08A881FAB25C6EC93 /* Pods-Baseball.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		86CFAC7D2DBAA16700FFC7D3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				86CFAC7B2DBAA16700FFC7D3 /* GradingHelpType.swift */,
+				86CFAC7C2DBAA16700FFC7D3 /* GradingHelpItem.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		86CFAC802DBAA16700FFC7D3 /* GradingHelp */ = {
+			isa = PBXGroup;
+			children = (
+				86CFAC7D2DBAA16700FFC7D3 /* Models */,
+				86CFAC7E2DBAA16700FFC7D3 /* GradingHelpView.swift */,
+				86CFAC7F2DBAA16700FFC7D3 /* GradingHelpViewModel.swift */,
+			);
+			path = GradingHelp;
+			sourceTree = "<group>";
+		};
+		86CFAC822DBAA16700FFC7D3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				86CFAC812DBAA16700FFC7D3 /* FastFilterType.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		86CFAC842DBAA16700FFC7D3 /* FastFiltersCarusel */ = {
+			isa = PBXGroup;
+			children = (
+				86CFAC822DBAA16700FFC7D3 /* Models */,
+				86CFAC832DBAA16700FFC7D3 /* FastFiltersView.swift */,
+			);
+			path = FastFiltersCarusel;
+			sourceTree = "<group>";
+		};
+		86CFAC852DBAA16700FFC7D3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				86CFAC842DBAA16700FFC7D3 /* FastFiltersCarusel */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		86CFAC882DBAA16700FFC7D3 /* FastFilters */ = {
+			isa = PBXGroup;
+			children = (
+				86CFAC852DBAA16700FFC7D3 /* View */,
+				86CFAC862DBAA16700FFC7D3 /* FastFiltersSheet.swift */,
+				86CFAC872DBAA16700FFC7D3 /* FastFiltersSheetViewModel.swift */,
+			);
+			path = FastFilters;
 			sourceTree = "<group>";
 		};
 		86EBD60E2D8B121A00FEB763 = {
@@ -850,6 +920,8 @@
 		86EBD6CA2D8B134800FEB763 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				86CFAC802DBAA16700FFC7D3 /* GradingHelp */,
+				86CFAC882DBAA16700FFC7D3 /* FastFilters */,
 				86EBD6612D8B134800FEB763 /* CardDescription */,
 				86EBD6762D8B134800FEB763 /* CardIdentifier */,
 				86EBD6792D8B134800FEB763 /* Category */,
@@ -874,7 +946,7 @@
 				86EBD6CC2D8B134800FEB763 /* CardDetails.swift */,
 				86EBD6CD2D8B134800FEB763 /* CardDiscoverResponse.swift */,
 				86EBD6CE2D8B134800FEB763 /* CardUploadResponse.swift */,
-				86EBD6CF2D8B134800FEB763 /* Grade.swift */,
+				86EBD6CF2D8B134800FEB763 /* GradeService.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -1133,9 +1205,13 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Baseball/Pods-Baseball-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
+			inputPaths = (
+			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Baseball/Pods-Baseball-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1189,7 +1265,7 @@
 				86EBD71F2D8B134800FEB763 /* SearchField.swift in Sources */,
 				86EBD7202D8B134800FEB763 /* ProfileManager.swift in Sources */,
 				86EBD7212D8B134800FEB763 /* ProfileAttributesRequest.swift in Sources */,
-				86EBD7222D8B134800FEB763 /* Grade.swift in Sources */,
+				86EBD7222D8B134800FEB763 /* GradeService.swift in Sources */,
 				86EBD7232D8B134800FEB763 /* CardCategory.swift in Sources */,
 				86EBD7242D8B134800FEB763 /* CardScannerView.swift in Sources */,
 				86EBD7252D8B134800FEB763 /* DetailsFooterView.swift in Sources */,
@@ -1264,6 +1340,14 @@
 				86EBD76C2D8B134800FEB763 /* Combine+Extension.swift in Sources */,
 				86EBD76D2D8B134800FEB763 /* IAPErrorHelper.swift in Sources */,
 				86EBD76E2D8B134800FEB763 /* ProfileManagerMediator.swift in Sources */,
+				86CFAC892DBAA16700FFC7D3 /* FastFilterType.swift in Sources */,
+				86CFAC8A2DBAA16700FFC7D3 /* FastFiltersSheet.swift in Sources */,
+				86CFAC8B2DBAA16700FFC7D3 /* FastFiltersView.swift in Sources */,
+				86CFAC8C2DBAA16700FFC7D3 /* GradingHelpViewModel.swift in Sources */,
+				86CFAC8D2DBAA16700FFC7D3 /* GradingHelpItem.swift in Sources */,
+				86CFAC8E2DBAA16700FFC7D3 /* FastFiltersSheetViewModel.swift in Sources */,
+				86CFAC8F2DBAA16700FFC7D3 /* GradingHelpView.swift in Sources */,
+				86CFAC902DBAA16700FFC7D3 /* GradingHelpType.swift in Sources */,
 				86EBD76F2D8B134800FEB763 /* ScreenSize.swift in Sources */,
 				86EBD7702D8B134800FEB763 /* SearchEmptyResultView.swift in Sources */,
 				86EBD7712D8B134800FEB763 /* CategoriesRequest.swift in Sources */,
@@ -1449,7 +1533,7 @@
 				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
-				IPHONEOS_DEPLOYMENT_TARGET = 16;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1492,7 +1576,7 @@
 				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
-				IPHONEOS_DEPLOYMENT_TARGET = 16;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
